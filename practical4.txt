@@ -1,0 +1,17 @@
+Changes made in the code
+
+
+
+No.	Original code	                  Changes made
+
+
+1	Basic design	            Improved layout and styling
+2	Simple boxes	            Added modern cards with rounded corners
+3	Basic buttons	            Improved button design and hover effects
+4	Basic background	    Added gradient header
+5	Basic theme switching	    Improved dark and light themes
+6	Basic image preview	    Improved image size and appearance
+7	Simple dynamic menu	    Added proper show/hide functionality
+8	Basic output messages	    Improved output display
+9	Basic layout	            Made the website responsive
+10	Basic JavaScript	    Improved variable names and code readability

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 4 - DOM Manipulation and Event Handling</title>
+    <link rel="stylesheet" href="practical4.css">
+</head>
+<body>
+    <header class="page-header">
+        <p class="eyebrow">JAVASCRIPT PRACTICAL</p>
+        <h1>DOM Manipulation &amp; Event Handling</h1>
+        <p>ShopEase Online Store Beginner JavaScript Demo</p>
+    </header>
+
+    <main class="container">
+        <section class="box">
+            <h2>1. Selecting HTML Elements</h2>
+            <p id="selectMessage">This paragraph has id="selectMessage".</p>
+            <p class="demoClass">First element with class="demoClass".</p>
+            <p class="demoClass">Second element with class="demoClass".</p>
+            <button id="selectBtn">Run Selection Demo</button>
+            <p id="selectOutput" class="output" aria-live="polite">Output will appear here.</p>
+        </section>
+
+        <section class="box">
+            <h2>2. Change Content, Attribute and Style</h2>
+            <p id="changeText">Original product message.</p>
+            <a id="shopLink" href="https://example.com" target="_blank" rel="noopener">Visit Shop</a>
+            <div class="button-row">
+                <button id="contentBtn">Change Content</button>
+                <button id="attributeBtn">Change Link</button>
+                <button id="styleBtn">Change Style</button>
+            </div>
+        </section>
+
+        <section class="box">
+            <h2>3. Create, Append, Replace and Remove Elements</h2>
+            <ul id="productList">
+                <li>Mobile</li>
+                <li>Laptop</li>
+            </ul>
+            <div class="button-row">
+                <button id="addBtn">Add Product</button>
+                <button id="replaceBtn">Replace First</button>
+                <button id="removeBtn" class="secondary">Remove Last</button>
+            </div>
+        </section>
+
+        <section class="box">
+            <h2>4. Click and Double-Click Events</h2>
+            <div class="button-row">
+                <button id="clickBtn">Click Me</button>
+                <button id="doubleBtn">Double-Click Me</button>
+            </div>
+            <p id="clickOutput" class="output" aria-live="polite">Waiting for action...</p>
+        </section>
+
+        <section class="box">
+            <h2>5. Mouse Events</h2>
+            <div id="mouseBox" class="mouse-box">Move your mouse over this box.</div>
+            <p id="mouseOutput" class="output" aria-live="polite">Mouse event message will appear here.</p>
+        </section>
+
+        <section class="box">
+            <h2>6. Keyboard Events</h2>
+            <label for="nameInput">Type something:</label>
+            <input type="text" id="nameInput" placeholder="Type your name">
+            <p id="keyOutput" class="output" aria-live="polite">Key information will appear here.</p>
+        </section>
+
+        <section class="box">
+            <h2>7. Change Event</h2>
+            <label for="categorySelect">Choose a category:</label>
+            <select id="categorySelect">
+                <option value="">Select Category</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Books">Books</option>
+            </select>
+            <p id="changeOutput" class="output" aria-live="polite">Selected category will appear here.</p>
+        </section>
+
+        <section class="box">
+            <h2>8. Theme Switching</h2>
+            <p>Use the button to switch between light and dark themes.</p>
+            <button id="themeBtn" aria-pressed="false">Switch Theme</button>
+        </section>
+
+        <section class="box">
+            <h2>9. Image Preview</h2>
+            <label for="imageSelect">Choose a preview:</label>
+            <select id="imageSelect">
+                <option value="https://picsum.photos/id/0/500/320">Laptop</option>
+                <option value="https://picsum.photos/id/96/500/320">Camera</option>
+                <option value="https://picsum.photos/id/1080/500/320">Food</option>
+            </select>
+            <div class="image-wrap">
+                <img id="previewImage" src="https://picsum.photos/id/0/500/320" alt="Laptop product preview">
+            </div>
+        </section>
+
+        <section class="box">
+            <h2>10. Dynamic Menu</h2>
+            <button id="menuBtn" aria-expanded="false" aria-controls="menu">Show / Hide Menu</button>
+            <nav id="menu" aria-label="Demo menu" hidden>
+                <a href="#top">Home</a>
+                <a href="#productList">Products</a>
+                <a href="#changeText">Offers</a>
+                <a href="#menu">Contact</a>
+            </nav>
+        </section>
+    </main>
+
+    <footer>Practical 4  HTML, CSS and JavaScript</footer>
+    <script src="practical4.js"></script>
+</body>
+</html>
